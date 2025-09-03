@@ -13,10 +13,12 @@
     </div>
 
     <div id="pago" class="container my-5 rounded-4 shadow p-4" style="background-color: #433261; color: white;">
-        <div style="background-color: #362652; border-radius: 30px;">
+        <div style="background-color: #362652; border-radius: 10px;">
             <h2 class="text-center text-light mb-4">Registro</h2>
         </div>
         <form>
+            <!-- zona registro dueño -->
+            
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre Completo</label>
                 <input type="text" class="form-control" id="nombre" required>
@@ -27,19 +29,24 @@
             </div>
             <div class="mb-3">
                 <label for="contrasena" class="form-label">Contraseña</label>
-                <input type="text" class="form-control" id="contrasena" required>
+                <input type="password" class="form-control" id="contrasena" required>
             </div>
             <div class="mb-3">
                 <label for="confirmacioncontrasena" class="form-label">Confirmar Contraseña</label>
-                <input type="text" class="form-control" id="confirmacioncontrasena" required>
+                <input type="password" class="form-control" id="confirmacioncontrasena" required>
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Telefono (opcional)</label>
                 <input type="text" class="form-control" id="telefono">
             </div>
-            <div>
-                <button class="btn btn-primary w-100" style="">Agregar Registro</button>
+            <div class="mb-3">
+                <h2 style="font-size: 18px;">Registro Mascota</h2>
+                <button class="btn btn-primary w-50" >Agregar Registro</button>
             </div>
+
+            <!-- zona registro mascota -->
+            <div id="form_mascota"></div>
+
             <button type="submit" class="btn btn-primary w-100">Registrar</button>
         </form>
     </div>
